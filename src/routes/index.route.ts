@@ -24,7 +24,7 @@ router.get('/',  async function(req, res, next) {
     p.name as ProductName 
     FROM [SalesLT].[ProductCategory] pc
     JOIN [SalesLT].[Product] p ON pc.productcategoryid = p.productcategoryid`)
-    .then(result =>  res.render('index', { resultSet:   result}))
+    .then(result =>  res.render('home', { resultSet:   result}))
     .catch(err => res.render('error'));
     poolConnection.close();
 

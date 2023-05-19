@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../src/app.ts');
+var app = require('../dict/src/index');
 var debug = require('debug')('myexpressapp:server');
 var http = require('http');
 
